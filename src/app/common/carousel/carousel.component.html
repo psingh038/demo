@@ -1,0 +1,16 @@
+<app-navbar>
+</app-navbar>
+<div class="carousel"> 
+    <div class="container-body">
+         
+    <div class="slide-wrapper"> 
+        
+        <ng-container *ngFor="let slide of visibleSlide">
+            <app-slide [@rightAnimation]="swipeArray.rightState" [@leftAnimation]="swipeArray.leftState"  class="slideComp" [slide]="slides[slide]"></app-slide>
+            
+        </ng-container>
+    </div>
+  <app-slider-button class="prev" (messageEvent)="onPreviousClick()" [text]="prev"></app-slider-button>
+  <app-slider-button class="next" (messageEvent)="onNextClick()" [text]="next"></app-slider-button>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.container-body{
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #f6cdcd;
+}
+
+.slide-wrapper{
+  position: relative;
+  margin-left: 10vh;
+  margin-right: 10vh;
+  justify-content: center;
+  height: 100vh;
+  width:90% ;
+    display: flex;
+    align-items: center;
+    background-image: repeating-linear-gradient(to right, #e7f5f6, #d6eaec 10%);
+}
+ 
+    
